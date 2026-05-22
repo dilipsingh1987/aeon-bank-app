@@ -14,7 +14,9 @@ const TransactionDetail: React.FC<any> = ({ route }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.item}>Ref ID: {transaction.refId}</Text>
-      <Text style={styles.item}>Date: {new Date(transaction.transferDate).toLocaleString()}</Text>
+      <Text style={styles.item}>
+        Date: {new Date(transaction.transferDate).toLocaleString()}
+      </Text>
       <Text style={styles.item}>Recipient: {transaction.recipientName}</Text>
       <Text style={styles.item}>Transfer: {transaction.transferName}</Text>
       <Text style={styles.item}>Amount: {transaction.amount.toFixed(2)}</Text>

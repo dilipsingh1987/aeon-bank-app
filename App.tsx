@@ -10,8 +10,16 @@ const App: React.FC = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="TransactionList" component={TransactionList} options={{ title: 'Transactions' }} />
-        <Stack.Screen name="TransactionDetail" component={TransactionDetail} options={{ title: 'Transaction Detail' }} />
+        <Stack.Screen
+          name="TransactionList"
+          component={TransactionList}
+          options={{ title: 'Transactions' }}
+        />
+        <Stack.Screen
+          name="TransactionDetail"
+          component={TransactionDetail}
+          options={{ title: 'Transaction Detail' }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
